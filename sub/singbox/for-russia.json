@@ -1,0 +1,280 @@
+{
+  "outbounds": [
+    {
+      "default": "Auto-Best",
+      "outbounds": [
+        "Auto-Best",
+        "🛡️ Белые списки РФ",
+        "🛡️ Белый список РФ #01 • VLESS (702ms)",
+        "🛡️ Белый список РФ #02 • VLESS (1892ms)",
+        "🛡️ Белый список РФ #03 • VLESS (588ms)",
+        "🛡️ Белый список РФ #04 • VLESS (428ms)",
+        "🛡️ Белый список РФ #05 • VLESS (950ms)",
+        "🛡️ Белый список РФ #06 • VLESS (745ms)",
+        "🛡️ Белый список РФ #07 • VMESS (2100ms)",
+        "🛡️ Белый список РФ #08 • VLESS (757ms)",
+        "🛡️ Белый список РФ #09 • VLESS (538ms)"
+      ],
+      "tag": "proxy",
+      "type": "selector"
+    },
+    {
+      "interval": "300s",
+      "outbounds": [
+        "🛡️ Белый список РФ #01 • VLESS (702ms)",
+        "🛡️ Белый список РФ #02 • VLESS (1892ms)",
+        "🛡️ Белый список РФ #03 • VLESS (588ms)",
+        "🛡️ Белый список РФ #04 • VLESS (428ms)",
+        "🛡️ Белый список РФ #05 • VLESS (950ms)",
+        "🛡️ Белый список РФ #06 • VLESS (745ms)",
+        "🛡️ Белый список РФ #07 • VMESS (2100ms)",
+        "🛡️ Белый список РФ #08 • VLESS (757ms)",
+        "🛡️ Белый список РФ #09 • VLESS (538ms)"
+      ],
+      "tag": "Auto-Best",
+      "tolerance": 50,
+      "type": "urltest",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "interval": "300s",
+      "outbounds": [
+        "🛡️ Белый список РФ #01 • VLESS (702ms)",
+        "🛡️ Белый список РФ #02 • VLESS (1892ms)",
+        "🛡️ Белый список РФ #03 • VLESS (588ms)",
+        "🛡️ Белый список РФ #04 • VLESS (428ms)",
+        "🛡️ Белый список РФ #05 • VLESS (950ms)",
+        "🛡️ Белый список РФ #06 • VLESS (745ms)",
+        "🛡️ Белый список РФ #07 • VMESS (2100ms)",
+        "🛡️ Белый список РФ #08 • VLESS (757ms)",
+        "🛡️ Белый список РФ #09 • VLESS (538ms)"
+      ],
+      "tag": "🛡️ Белые списки РФ",
+      "tolerance": 50,
+      "type": "urltest",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "113.30.154.246",
+      "server_port": 443,
+      "tag": "🛡️ Белый список РФ #01 • VLESS (702ms)",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        },
+        "server_name": "ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "type": "vless",
+      "uuid": "0b6a937e-5b0e-49ca-b31e-f03f290e97cf"
+    },
+    {
+      "server": "deliverya.online",
+      "server_port": 443,
+      "tag": "🛡️ Белый список РФ #02 • VLESS (1892ms)",
+      "tls": {
+        "enabled": true,
+        "server_name": "deliverya.online"
+      },
+      "transport": {
+        "headers": {
+          "Host": "deliverya.online"
+        },
+        "path": "/adrws",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "c8b3c1d7-4294-4f30-9e5b-e4693b64d518"
+    },
+    {
+      "server": "201.24.121.243",
+      "server_port": 443,
+      "tag": "🛡️ Белый список РФ #03 • VLESS (588ms)",
+      "tls": {
+        "enabled": true,
+        "server_name": "kk-ru24a1.testkknegr.online"
+      },
+      "transport": {
+        "service_name": "vlgrpc",
+        "type": "grpc"
+      },
+      "type": "vless",
+      "uuid": "32b5ca9b-3f81-4031-965d-e8b074216e8d"
+    },
+    {
+      "server": "46.243.142.104",
+      "server_port": 443,
+      "tag": "🛡️ Белый список РФ #04 • VLESS (428ms)",
+      "tls": {
+        "enabled": true,
+        "server_name": "santehdv.site"
+      },
+      "transport": {
+        "headers": {
+          "Host": "santehdv.site"
+        },
+        "path": "/media/stream/qUWu2oaFgxAw",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "9ba53795-4356-40ab-8067-76ec2ae2a3d8"
+    },
+    {
+      "server": "185.179.190.170",
+      "server_port": 59222,
+      "tag": "🛡️ Белый список РФ #05 • VLESS (950ms)",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "riOqDvO6CI06_GP7aJEtDH27zPWu6BiFwGrUESatk1I",
+          "short_id": "e03d3096bebd"
+        },
+        "server_name": "tbank.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc"
+      },
+      "type": "vless",
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "178.172.227.124",
+      "server_port": 10444,
+      "tag": "🛡️ Белый список РФ #06 • VLESS (745ms)",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+          "short_id": "8debcf36f1cc69ff"
+        },
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "type": "vless",
+      "uuid": "1af36694-b548-4b18-89a0-bc076eab4ed7"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "158.160.180.165",
+      "server_port": 24212,
+      "tag": "🛡️ Белый список РФ #07 • VMESS (2100ms)",
+      "tls": {
+        "enabled": true
+      },
+      "type": "vmess",
+      "uuid": "c58c1205-b308-416f-8503-c04557abf93d"
+    },
+    {
+      "server": "95.143.188.10",
+      "server_port": 443,
+      "tag": "🛡️ Белый список РФ #08 • VLESS (757ms)",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "YHPoUNxsml4z6pYt-7djOb1lqnBjxCk4-2mk84pveyc",
+          "short_id": "3b5b38669a1a51c0"
+        },
+        "server_name": "git.medrocket.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "type": "vless",
+      "uuid": "9c5ad05d-d807-0029-bf48-cfad48af6dec"
+    },
+    {
+      "server": "78.159.246.85",
+      "server_port": 8443,
+      "tag": "🛡️ Белый список РФ #09 • VLESS (538ms)",
+      "tls": {
+        "enabled": true,
+        "server_name": "fitindoor.net"
+      },
+      "type": "vless",
+      "uuid": "2c634977-584e-4e1f-b501-1b70c77a6743"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "block",
+      "type": "block"
+    },
+    {
+      "tag": "dns-out",
+      "type": "dns"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "final": "proxy",
+    "rules": [
+      {
+        "outbound": "dns-out",
+        "protocol": "dns"
+      },
+      {
+        "geoip": [
+          "private"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "geosite": [
+          "category-ru"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "geoip": [
+          "ru"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "domain_suffix": [
+          ".ru",
+          ".su",
+          ".xn--p1ai",
+          "yandex.ru",
+          "yandex.net",
+          "ya.ru",
+          "vk.com",
+          "vk.ru",
+          "ok.ru",
+          "mail.ru",
+          "sberbank.ru",
+          "sber.ru",
+          "tbank.ru",
+          "tinkoff.ru",
+          "gosuslugi.ru",
+          "mos.ru",
+          "kinopoisk.ru",
+          "dzen.ru"
+        ],
+        "outbound": "direct"
+      }
+    ]
+  }
+}
