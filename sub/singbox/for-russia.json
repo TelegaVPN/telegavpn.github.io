@@ -1,0 +1,198 @@
+{
+  "outbounds": [
+    {
+      "default": "Auto-Best",
+      "outbounds": [
+        "Auto-Best",
+        "🛡️ Белые списки РФ",
+        "🛡️ Белый список РФ #01 • VLESS (697ms)",
+        "🛡️ Белый список РФ #02 • VLESS (2016ms)",
+        "🛡️ Белый список РФ #03 • HYSTERIA2 (492ms)",
+        "🛡️ Белый список РФ #04 • HYSTERIA2 (1109ms)",
+        "🛡️ Белый список РФ #05 • VLESS (508ms)",
+        "🛡️ Белый список РФ #06 • VLESS (444ms)"
+      ],
+      "tag": "proxy",
+      "type": "selector"
+    },
+    {
+      "interval": "300s",
+      "outbounds": [
+        "🛡️ Белый список РФ #01 • VLESS (697ms)",
+        "🛡️ Белый список РФ #02 • VLESS (2016ms)",
+        "🛡️ Белый список РФ #03 • HYSTERIA2 (492ms)",
+        "🛡️ Белый список РФ #04 • HYSTERIA2 (1109ms)",
+        "🛡️ Белый список РФ #05 • VLESS (508ms)",
+        "🛡️ Белый список РФ #06 • VLESS (444ms)"
+      ],
+      "tag": "Auto-Best",
+      "tolerance": 50,
+      "type": "urltest",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "interval": "300s",
+      "outbounds": [
+        "🛡️ Белый список РФ #01 • VLESS (697ms)",
+        "🛡️ Белый список РФ #02 • VLESS (2016ms)",
+        "🛡️ Белый список РФ #03 • HYSTERIA2 (492ms)",
+        "🛡️ Белый список РФ #04 • HYSTERIA2 (1109ms)",
+        "🛡️ Белый список РФ #05 • VLESS (508ms)",
+        "🛡️ Белый список РФ #06 • VLESS (444ms)"
+      ],
+      "tag": "🛡️ Белые списки РФ",
+      "tolerance": 50,
+      "type": "urltest",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "178.248.236.229",
+      "server_port": 443,
+      "tag": "🛡️ Белый список РФ #01 • VLESS (697ms)",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "_3mkK8SY6YVqws73SUVPKL77tzxDVNUt4ag9J9ec-D0",
+          "short_id": "d05a120d3506d2cc"
+        },
+        "server_name": "144.hexdey.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "type": "vless",
+      "uuid": "a71d6c6d-c95e-4ec1-a892-22e21733bf09"
+    },
+    {
+      "server": "107.150.93.43",
+      "server_port": 443,
+      "tag": "🛡️ Белый список РФ #02 • VLESS (2016ms)",
+      "tls": {
+        "enabled": true,
+        "server_name": "e9958027.ferrin.uk"
+      },
+      "type": "vless",
+      "uuid": "e9958027-03be-4eb5-bcec-70415b2e4844"
+    },
+    {
+      "password": "5c49355f-afbc-0001-9c1c-8205436bb97c",
+      "server": "185.151.243.186",
+      "server_port": 443,
+      "tag": "🛡️ Белый список РФ #03 • HYSTERIA2 (492ms)",
+      "tls": {
+        "enabled": true,
+        "server_name": "piodr-ru-74sel.my-fade.cloud"
+      },
+      "type": "hysteria2"
+    },
+    {
+      "password": "004ea4a8-d701-0001-b0c0-8e61a5c31a23",
+      "server": "168.113.252.11",
+      "server_port": 443,
+      "tag": "🛡️ Белый список РФ #04 • HYSTERIA2 (1109ms)",
+      "tls": {
+        "enabled": true,
+        "server_name": "jkawq-ru-45sb.fade.mom"
+      },
+      "type": "hysteria2"
+    },
+    {
+      "server": "81.163.22.238",
+      "server_port": 443,
+      "tag": "🛡️ Белый список РФ #05 • VLESS (508ms)",
+      "tls": {
+        "enabled": true,
+        "server_name": "oilokvcyfczlioxhxq.fcloudservices.lat"
+      },
+      "type": "vless",
+      "uuid": "8941962c-a1ae-0001-b936-e18dea3a73a5"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "132.243.242.216",
+      "server_port": 9543,
+      "tag": "🛡️ Белый список РФ #06 • VLESS (444ms)",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+          "short_id": "123abcdf"
+        },
+        "server_name": "storage.yandexcloud.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "type": "vless",
+      "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "block",
+      "type": "block"
+    },
+    {
+      "tag": "dns-out",
+      "type": "dns"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "final": "proxy",
+    "rules": [
+      {
+        "outbound": "dns-out",
+        "protocol": "dns"
+      },
+      {
+        "geoip": [
+          "private"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "geosite": [
+          "category-ru"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "geoip": [
+          "ru"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "domain_suffix": [
+          ".ru",
+          ".su",
+          ".xn--p1ai",
+          "yandex.ru",
+          "yandex.net",
+          "ya.ru",
+          "vk.com",
+          "vk.ru",
+          "ok.ru",
+          "mail.ru",
+          "sberbank.ru",
+          "sber.ru",
+          "tbank.ru",
+          "tinkoff.ru",
+          "gosuslugi.ru",
+          "mos.ru",
+          "kinopoisk.ru",
+          "dzen.ru"
+        ],
+        "outbound": "direct"
+      }
+    ]
+  }
+}
