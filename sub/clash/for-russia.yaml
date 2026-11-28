@@ -1,0 +1,159 @@
+# Subscription by vpnkeys.me (https://vpnkeys.me/sub/clash/for-russia)
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+    - client-fingerprint: firefox
+      flow: xtls-rprx-vision
+      name: "\U0001F6E1️ Белый список РФ #01 • VLESS (448ms)"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: 0Z3I5CPO_-r4A7wQw9RT7lPwUzs-QroFCEYJbVUv2EA
+        short-id: 9ac2917279ee6eb8
+      server: 5.188.72.82
+      servername: nepaly597.lkfnvflknsdn.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: f4b08bf1-d9bd-4755-aa88-ba922282c608
+    - client-fingerprint: firefox
+      flow: xtls-rprx-vision
+      name: "\U0001F6E1️ Белый список РФ #02 • VLESS (440ms)"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: KEZ93Y9VgoirI18wIpcfS3z8I9GiaiFe-GKqGdEPMmg
+        short-id: 4a44dc153642
+      server: 78.159.245.212
+      servername: player.mediavitrina.ru
+      tls: true
+      type: vless
+      udp: true
+      uuid: 68eb9113-416b-4ac9-8b10-4de023aec876
+    - auth: 2444df7f-4a0c-45bd-9c62-25a7ff8c4dba
+      name: "\U0001F6E1️ Белый список РФ #03 • HYSTERIA2 (625ms)"
+      password: 2444df7f-4a0c-45bd-9c62-25a7ff8c4dba
+      port: 443
+      server: 193.124.66.172
+      sni: lv.0000000000000.space
+      type: hysteria2
+    - auth: 81f705b5-9039-4adf-8671-783095bba0e8
+      name: "\U0001F6E1️ Белый список РФ #04 • HYSTERIA2 (2171ms)"
+      password: 81f705b5-9039-4adf-8671-783095bba0e8
+      port: 443
+      server: rumos1.sky-vault.top
+      sni: rumos1.sky-vault.top
+      type: hysteria2
+    - client-fingerprint: firefox
+      name: "\U0001F6E1️ Белый список РФ #05 • VLESS (617ms)"
+      network: tcp
+      port: 555
+      reality-opts:
+        public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+        short-id: db04ce8bdb8900f1
+      server: 79.174.92.188
+      servername: 1.4.8.8
+      tls: true
+      type: vless
+      udp: true
+      uuid: cfa7fab8-9aef-4291-b4a2-9b0fd464457a
+    - client-fingerprint: firefox
+      flow: xtls-rprx-vision
+      name: "\U0001F6E1️ Белый список РФ #06 • VLESS (469ms)"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: GiDgVRVYrTkv1mZJeFVWkr736Iey2kqLM6L0eUbffV8
+        short-id: ""
+      server: 201.51.11.65
+      servername: absolute-disaster.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: Fluffy_VPN-zKZUa4Ie
+    - grpc-opts:
+        grpc-service-name: mobile.api.Event
+      name: "\U0001F6E1️ Белый список РФ #07 • VLESS (3366ms)"
+      network: grpc
+      port: 443
+      server: vps3.nemnogogo.com
+      servername: vps3.nemnogogo.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+proxy-groups:
+    - name: PROXY
+      proxies:
+        - "\U0001F6E1️ АВТО-БАЛАНСИР • Для России и Белых списков"
+        - "\U0001F6E1️ Белые списки РФ"
+        - "\U0001F30D ВЫБОР ЛОКАЦИИ"
+        - FALLBACK
+        - "\U0001F6E1️ Белый список РФ #01 • VLESS (448ms)"
+        - "\U0001F6E1️ Белый список РФ #02 • VLESS (440ms)"
+        - "\U0001F6E1️ Белый список РФ #03 • HYSTERIA2 (625ms)"
+        - "\U0001F6E1️ Белый список РФ #04 • HYSTERIA2 (2171ms)"
+        - "\U0001F6E1️ Белый список РФ #05 • VLESS (617ms)"
+        - "\U0001F6E1️ Белый список РФ #06 • VLESS (469ms)"
+        - "\U0001F6E1️ Белый список РФ #07 • VLESS (3366ms)"
+      type: select
+    - interval: 300
+      name: "\U0001F6E1️ АВТО-БАЛАНСИР • Для России и Белых списков"
+      proxies:
+        - "\U0001F6E1️ Белый список РФ #01 • VLESS (448ms)"
+        - "\U0001F6E1️ Белый список РФ #02 • VLESS (440ms)"
+        - "\U0001F6E1️ Белый список РФ #03 • HYSTERIA2 (625ms)"
+        - "\U0001F6E1️ Белый список РФ #04 • HYSTERIA2 (2171ms)"
+        - "\U0001F6E1️ Белый список РФ #05 • VLESS (617ms)"
+        - "\U0001F6E1️ Белый список РФ #06 • VLESS (469ms)"
+        - "\U0001F6E1️ Белый список РФ #07 • VLESS (3366ms)"
+      tolerance: 50
+      type: url-test
+      url: http://cp.cloudflare.com/generate_204
+    - interval: 300
+      name: "\U0001F6E1️ Белые списки РФ"
+      proxies:
+        - "\U0001F6E1️ Белый список РФ #01 • VLESS (448ms)"
+        - "\U0001F6E1️ Белый список РФ #02 • VLESS (440ms)"
+        - "\U0001F6E1️ Белый список РФ #03 • HYSTERIA2 (625ms)"
+        - "\U0001F6E1️ Белый список РФ #04 • HYSTERIA2 (2171ms)"
+        - "\U0001F6E1️ Белый список РФ #05 • VLESS (617ms)"
+        - "\U0001F6E1️ Белый список РФ #06 • VLESS (469ms)"
+        - "\U0001F6E1️ Белый список РФ #07 • VLESS (3366ms)"
+      strategy: consistent-hashing
+      type: load-balance
+      url: http://cp.cloudflare.com/generate_204
+    - name: "\U0001F30D ВЫБОР ЛОКАЦИИ"
+      proxies:
+        - DIRECT
+      type: select
+    - interval: 300
+      name: FALLBACK
+      proxies:
+        - "\U0001F6E1️ Белый список РФ #01 • VLESS (448ms)"
+        - "\U0001F6E1️ Белый список РФ #02 • VLESS (440ms)"
+        - "\U0001F6E1️ Белый список РФ #03 • HYSTERIA2 (625ms)"
+        - "\U0001F6E1️ Белый список РФ #04 • HYSTERIA2 (2171ms)"
+        - "\U0001F6E1️ Белый список РФ #05 • VLESS (617ms)"
+        - "\U0001F6E1️ Белый список РФ #06 • VLESS (469ms)"
+        - "\U0001F6E1️ Белый список РФ #07 • VLESS (3366ms)"
+      type: fallback
+      url: http://cp.cloudflare.com/generate_204
+rules:
+    - DOMAIN-SUFFIX,ru,DIRECT
+    - DOMAIN-SUFFIX,su,DIRECT
+    - DOMAIN-SUFFIX,xn--p1ai,DIRECT
+    - DOMAIN-KEYWORD,yandex,DIRECT
+    - DOMAIN-KEYWORD,vk,DIRECT
+    - DOMAIN-KEYWORD,sberbank,DIRECT
+    - DOMAIN-KEYWORD,tbank,DIRECT
+    - DOMAIN-KEYWORD,gosuslugi,DIRECT
+    - DOMAIN-KEYWORD,mos,DIRECT
+    - DOMAIN-KEYWORD,kinopoisk,DIRECT
+    - GEOIP,RU,DIRECT
+    - GEOIP,private,DIRECT,no-resolve
+    - MATCH,PROXY
